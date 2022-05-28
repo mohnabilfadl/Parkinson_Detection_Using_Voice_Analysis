@@ -12,7 +12,7 @@ BioMedical Engineering OnLine 2007, 6:23 (26 June 2007)
 # Project Objectives:
 This project aims at utilizing machine learning algorithms to detect the presence of the early stage of Parkinson's disease using voice recordings of healthy people and people suffering from parkinson's disease.
 
-# Dataset
+# Dataset:
 The dataset was acquired from kaggle, though it originated from [here](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/), The dataset consists of 195 rows, and 24 columns.The rows represent 195 observations, and the columns represent 23 features and 1 target variable.
 
 Feature	
