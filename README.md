@@ -48,7 +48,7 @@ Accuracy is the metric that is most intuitive.
 
 This is defined as:
 
-![image](https://user-images.githubusercontent.com/95732821/169638957-d64f1e1e-a398-422a-bfe5-afa358dab1af.png)
+![image](https://user-images.githubusercontent.com/63733989/170835692-eea27661-fdee-40d9-956a-a6e5451421a3.png)
 
 
 In other words accuracy is correct predictions the model made out of the total number of predictions.
@@ -63,8 +63,7 @@ For example,  If the dataset were imbalanced, say 99.9% positive, then a predict
 In order to reduce the number of false negatives,the recall scores needs to be improved.
 
 Recall is defined as:
-![image](https://user-images.githubusercontent.com/95732821/169638957-d64f1e1e-a398-422a-bfe5-afa358dab1af.png)
-
+![image](https://user-images.githubusercontent.com/63733989/170835748-f26bfb28-a1af-4506-aa2b-20b110b8ed7c.png)
 It simply asks the question: how many samples did the model label as positive out of all of the true positive samples?
 
 Pros: A higher recall means a fewer false negative predictions, also known as type 2 errors. It's ideal for instances where the classification of a positive as a negative is a costly error.
@@ -77,7 +76,7 @@ In the case of this dataset, The consequence of predicting a false negative is g
 When the number of false positives needs to be reduced, the precision score is being improved.
 Precision is defined as:
 
-![image](https://user-images.githubusercontent.com/95732821/169639653-692b2103-c435-49a9-92b6-d34099f28a9b.png)
+![image](https://user-images.githubusercontent.com/63733989/170835723-fbf6fc7b-d9e1-4671-968b-d9064287d92a.png)
 
 In other words: What ratio of the samples predicted in the positive class were truelly in the positive class?
 
@@ -94,6 +93,6 @@ In this case precision would be measuring how many of the individuals diagnosed 
 
 # Conclusion
 
-We can conclude that SVM && kNN Model are best for our dataset as they are giving highest AUC score.
-The higher the AUC, the better the performance of the model at distinguishing between the positive and negative classes.
-Hence we will make Prediction System for SVM Model and save this model into pickle file.
+* We can conclude that SVM && kNN Model are best for our dataset as they are giving highest AUC score.
+* The higher the AUC, the better the performance of the model at distinguishing between the positive and negative classes.
+* Hence we will make Prediction System for SVM Model and save this model into pickle file.
