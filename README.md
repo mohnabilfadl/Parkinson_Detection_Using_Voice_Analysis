@@ -1,5 +1,7 @@
 # Prediction of Parkinson’s Disease Using Voice Analysis
 
+![parkinson2](https://user-images.githubusercontent.com/63733989/170835549-b2456085-24b4-4f2a-848d-9fb24cde2301.jpg)
+
 # Parkinson’s Disease
 Parkinson’s Disease (PD) is a degenerative neurological disorder marked by decreased dopamine levels in the brain. It manifests itself through a deterioration of movement, including the presence of tremors and stiffness. There is commonly a marked effect on speech, including dysarthria (difficulty articulating sounds), hypophonia (lowered volume), and monotone (reduced pitch range). Additionally, cognitive impairments and changes in mood can occur, and risk of dementia is increased.
 
@@ -28,10 +30,6 @@ Feature
 |DFA|Signal fractal scaling exponent|
 |SPREAD1, SPREAD2, PPE| Three nonlinear measures of fundamental frequency variation|
 
-The distribution of these features varies between individuals with the disease and those without the disease. The orange bars in the barcharts below represents individuals with the disease and the blue bars represents individuals without the disease. There is a clear differnce in the level of voice features in the two groups. This difference is what will be used in the classification of individuals into PD positive and PD negetive status.
-![Picture1](https://user-images.githubusercontent.com/95732821/169638157-432b5e67-a6a0-44ab-9f5e-cabdecbcd2d6.png)
-
-A data classification was performed on the above features using KNN,LGBM and XGB classification models. All three models were tuned and evaluated
 
 ## Model Evaluation
 
@@ -89,19 +87,16 @@ Cons: Precision does not penalize a model for false negatives. It does not count
 
 In this case precision would be measuring how many of the individuals diagnosed with Parkinson's disease, actually had the disease.
 
-|KNN Model|	LGBM Model|	XGB Model|
-|---------|-----------|----------|
-| 	 	![image](https://user-images.githubusercontent.com/95732821/169640422-73155f6e-7fe9-434d-9a25-d9db0c4a980e.png)|![image](https://user-images.githubusercontent.com/95732821/169640438-bf341f1e-ba55-4963-ab45-0e87625bf56a.png)|![image](https://user-images.githubusercontent.com/95732821/169640448-aa088848-f890-493f-843b-9aead9cd885b.png)|
-It can be seen here how each model predicted the testing set. The KNN model made about 27% wrong predictions, It predicted the individuals asnegative, when they are actually positive. The LGBM did much better by predicting just about 3% as false negatives, while the XGB model's performance is not as good as the LGB model, it is slightly lower than the KNN, it made 12 false negative predictions.
+# Models Final results 
 
-![image](https://user-images.githubusercontent.com/95732821/169640513-9ee6ba5e-48f2-4f16-81c5-dcf1368ce6b5.png)
-The 
-![image](https://user-images.githubusercontent.com/95732821/169641860-b60b85c7-8041-4c89-9420-5384cbafe682.png)
-![image](https://user-images.githubusercontent.com/95732821/169641883-bc877fd8-dcc8-4043-bca6-9b6672283a90.png)
+![res](https://user-images.githubusercontent.com/63733989/170835524-e00411d6-70b0-40cb-857e-29cef41362d1.png)
+
 
 # Conclusion
-All three models performed well on both the train and test set, but LGBM classifier had the highest accuracy score of 97% on the test set, which is just 2.7 less than the 100% score on the train set. Therefore the most suitable model out of all three models for the prediction of early stage parkinson disease in individuals is the LGBM 
 
-# Recommendations
-The LGBM Model is reccomended due to having the highest Accuracy, Recall, and Precision Scores.
-Accurate prediction can lead to early diagnosis and treatment. Inaccurate prediction can delay diagnosis and treatment, which can be detrimental to the individual.
+**We can conclude that SVM && kNN Model are best for our dataset as they are giving highest AUC score.
+
+Hence we will make Prediction System for SVM Model and save this model into pickle file.
+
+The higher the AUC, the better the performance of the model at distinguishing between the positive and negative classes.
+
