@@ -15,7 +15,7 @@ This project aims at utilizing machine learning algorithms to detect the presenc
 # Dataset:
 The dataset was acquired from kaggle, though it originated from [here](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/), The dataset consists of 195 rows, and 24 columns.The rows represent 195 observations, and the columns represent 23 features and 1 target variable.
 
-Feature	
+# Features	:
 
 |Features|Description|
 |--------|-----------|
