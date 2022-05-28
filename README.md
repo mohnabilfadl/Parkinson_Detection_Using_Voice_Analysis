@@ -94,9 +94,6 @@ In this case precision would be measuring how many of the individuals diagnosed 
 
 # Conclusion
 
-**We can conclude that SVM && kNN Model are best for our dataset as they are giving highest AUC score.
-
-Hence we will make Prediction System for SVM Model and save this model into pickle file.
-
+We can conclude that SVM && kNN Model are best for our dataset as they are giving highest AUC score.
 The higher the AUC, the better the performance of the model at distinguishing between the positive and negative classes.
-
+Hence we will make Prediction System for SVM Model and save this model into pickle file.
