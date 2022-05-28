@@ -31,7 +31,7 @@ The dataset was acquired from kaggle, though it originated from [here](https://a
 |SPREAD1, SPREAD2, PPE| Three nonlinear measures of fundamental frequency variation|
 
 
-## Model Evaluation
+## Model Evaluation:
 
 **Error Types**
 In every binary classification problem, there is always a 'positive' class and a 'negative' class. The positive class should be the one you are most interested in findingis usually the group of interest. For this Parkinson's disease dataset, the positive class will be the presence of Parkinson's disease and the negative class will be the absence of parkinson's disease.
@@ -41,7 +41,7 @@ In every binary classification problem, there is always a 'positive' class and a
 **Type 2 error:** If our model predicts that there is an absence of Parkinson's disease, when the disease is present, it will have made a type 2 error. This is is also known as a false negative.
 
 
-### Evaluation Metrics
+### Evaluation Metrics:
 
 Accuracy Scores
 Accuracy is the metric that is most intuitive.
@@ -88,12 +88,12 @@ Cons: Precision does not penalize a model for false negatives. It does not count
 
 In this case precision would be measuring how many of the individuals diagnosed with Parkinson's disease, actually had the disease.
 
-# Models Final results 
+# Models Final results :
 
 ![res](https://user-images.githubusercontent.com/63733989/170835524-e00411d6-70b0-40cb-857e-29cef41362d1.png)
 
 
-# Conclusion
+# Conclusion:
 
 * We can conclude that SVM && kNN Model are best for our dataset as they are giving highest AUC score.
 * The higher the AUC, the better the performance of the model at distinguishing between the positive and negative classes.
