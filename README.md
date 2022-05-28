@@ -63,7 +63,9 @@ For example,  If the dataset were imbalanced, say 99.9% positive, then a predict
 In order to reduce the number of false negatives,the recall scores needs to be improved.
 
 Recall is defined as:
+
 ![image](https://user-images.githubusercontent.com/63733989/170835748-f26bfb28-a1af-4506-aa2b-20b110b8ed7c.png)
+
 It simply asks the question: how many samples did the model label as positive out of all of the true positive samples?
 
 Pros: A higher recall means a fewer false negative predictions, also known as type 2 errors. It's ideal for instances where the classification of a positive as a negative is a costly error.
