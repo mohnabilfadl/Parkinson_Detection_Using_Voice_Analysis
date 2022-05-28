@@ -9,7 +9,7 @@ Traditional diagnosis of Parkinson’s Disease involves a clinician taking a neu
 * Source: 'Exploiting Nonlinear Recurrence and Fractal Scaling Properties for Voice Disorder Detection'),Little MA, McSharry PE, Roberts SJ, Costello DAE, Moroz IM.
 BioMedical Engineering OnLine 2007, 6:23 (26 June 2007)
 > 
-# Project Objectives.
+# Project Objectives:
 This project aims at utilizing machine learning algorithms to detect the presence of the early stage of Parkinson's disease using voice recordings of healthy people and people suffering from parkinson's disease.
 
 # Dataset
